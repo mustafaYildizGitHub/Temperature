@@ -23,7 +23,7 @@ class ViewController: UIViewController,UIPickerViewDataSource ,UIPickerViewDeleg
         cityManager.delegate = self
         cityPicker.dataSource = self
         cityPicker.delegate = self
-        cityManager.getCityTemp(for: "London")
+        cityManager.getCityTemp(for: cityManager.citiesArray[0])
     }
     
     func updateInterface(temperature: String, image: String) {
