@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		753DDD7828A52DD600EAEAF7 /* CWC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CWC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		753DDD7828A52DD600EAEAF7 /* Temperature.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Temperature.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		753DDD7B28A52DD600EAEAF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		753DDD7D28A52DD600EAEAF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		753DDD7F28A52DD600EAEAF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,10 +43,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		752C2EDA28A99D25004144AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				753DDD7F28A52DD600EAEAF7 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		752C2EDB28A99D2F004144AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				753DDD8128A52DD600EAEAF7 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		753DDD6F28A52DD600EAEAF7 = {
 			isa = PBXGroup;
 			children = (
-				753DDD7A28A52DD600EAEAF7 /* CWC */,
+				753DDD7A28A52DD600EAEAF7 /* Temperature */,
 				753DDD7928A52DD600EAEAF7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,24 +70,24 @@
 		753DDD7928A52DD600EAEAF7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				753DDD7828A52DD600EAEAF7 /* CWC.app */,
+				753DDD7828A52DD600EAEAF7 /* Temperature.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		753DDD7A28A52DD600EAEAF7 /* CWC */ = {
+		753DDD7A28A52DD600EAEAF7 /* Temperature */ = {
 			isa = PBXGroup;
 			children = (
 				753DDD7B28A52DD600EAEAF7 /* AppDelegate.swift */,
 				753DDD7D28A52DD600EAEAF7 /* SceneDelegate.swift */,
-				753DDD7F28A52DD600EAEAF7 /* ViewController.swift */,
-				753DDD8128A52DD600EAEAF7 /* Main.storyboard */,
+				753DDD9328A547BA00EAEAF7 /* Model */,
+				752C2EDB28A99D2F004144AF /* View */,
+				752C2EDA28A99D25004144AF /* Controller */,
 				753DDD8428A52DD800EAEAF7 /* Assets.xcassets */,
 				753DDD8628A52DD800EAEAF7 /* LaunchScreen.storyboard */,
 				753DDD8928A52DD800EAEAF7 /* Info.plist */,
-				753DDD9328A547BA00EAEAF7 /* Model */,
 			);
-			path = CWC;
+			path = Temperature;
 			sourceTree = "<group>";
 		};
 		753DDD9328A547BA00EAEAF7 /* Model */ = {
@@ -87,9 +103,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		753DDD7728A52DD600EAEAF7 /* CWC */ = {
+		753DDD7728A52DD600EAEAF7 /* Temperature */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 753DDD8C28A52DD800EAEAF7 /* Build configuration list for PBXNativeTarget "CWC" */;
+			buildConfigurationList = 753DDD8C28A52DD800EAEAF7 /* Build configuration list for PBXNativeTarget "Temperature" */;
 			buildPhases = (
 				753DDD7428A52DD600EAEAF7 /* Sources */,
 				753DDD7528A52DD600EAEAF7 /* Frameworks */,
@@ -99,9 +115,9 @@
 			);
 			dependencies = (
 			);
-			name = CWC;
+			name = Temperature;
 			productName = CWC;
-			productReference = 753DDD7828A52DD600EAEAF7 /* CWC.app */;
+			productReference = 753DDD7828A52DD600EAEAF7 /* Temperature.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -119,7 +135,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 753DDD7328A52DD600EAEAF7 /* Build configuration list for PBXProject "CWC" */;
+			buildConfigurationList = 753DDD7328A52DD600EAEAF7 /* Build configuration list for PBXProject "Temperature" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -132,7 +148,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				753DDD7728A52DD600EAEAF7 /* CWC */,
+				753DDD7728A52DD600EAEAF7 /* Temperature */,
 			);
 		};
 /* End PBXProject section */
@@ -303,14 +319,14 @@
 		753DDD8D28A52DD800EAEAF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MJRRB6FD84;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CWC/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = CitiesWeather;
+				INFOPLIST_FILE = Temperature/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Temperature;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -322,7 +338,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mustafayildiz.CWC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mustafayildiz.Temperature;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -333,14 +349,14 @@
 		753DDD8E28A52DD800EAEAF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MJRRB6FD84;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CWC/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = CitiesWeather;
+				INFOPLIST_FILE = Temperature/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Temperature;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -352,7 +368,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mustafayildiz.CWC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mustafayildiz.Temperature;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -363,7 +379,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		753DDD7328A52DD600EAEAF7 /* Build configuration list for PBXProject "CWC" */ = {
+		753DDD7328A52DD600EAEAF7 /* Build configuration list for PBXProject "Temperature" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				753DDD8A28A52DD800EAEAF7 /* Debug */,
@@ -372,7 +388,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		753DDD8C28A52DD800EAEAF7 /* Build configuration list for PBXNativeTarget "CWC" */ = {
+		753DDD8C28A52DD800EAEAF7 /* Build configuration list for PBXNativeTarget "Temperature" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				753DDD8D28A52DD800EAEAF7 /* Debug */,

@@ -72,7 +72,7 @@ struct CityManager{
                         }
             }
             
-            var array = [tempString,conditionName]
+            let array = [tempString,conditionName]
             
             return array
             
